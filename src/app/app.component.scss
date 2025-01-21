@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+body {
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    background-color: #222; /* Un gris más oscuro, como la piedra de Winterfell */
+    color: #eee; /* Blanco hueso para el texto */
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("https://i.pinimg.com/originals/39/53/1f/39531f8f948f95f492a54366113b869d.jpg"); /* Imagen de fondo sutil */
+    background-size: cover;
+    background-attachment: fixed; /* Para que la imagen de fondo se mantenga fija al hacer scroll */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    backdrop-filter: blur(5px); /* Añade un desenfoque al fondo para mejorar la legibilidad del texto */
+    background-color: rgba(34, 34, 34, 0.7); /* Fondo semi-transparente para el contenedor */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el contenedor*/
+}
+
+.main-header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #666; /* Borde más claro */
+    margin-bottom: 20px;
+}
+
+.main-header h1 {
+    font-size: 2.5em;
+    color: #d3d3d3; /* Gris claro, casi blanco */
+    text-shadow: 2px 2px 4px #000000; /*Sombra al texto*/
+}
+
+.subtitle {
+    font-style: italic;
+    margin-top: 10px;
+    color: #c0c0c0; /* Un gris un poco más oscuro para el subtítulo */
+}
+
+.main-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: rgba(50, 50, 50, 0.7); /* Fondo gris más claro y semi-transparente */
+    border: 1px solid #777; /* Borde más claro */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta al pasar el mouse */
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5); /* Sombra más pronunciada al hacer hover */
+}
+
+.card h2 {
+    color: #b0c4de; /* Azul acero claro */
+    margin-bottom: 10px;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(40, 40, 40, 0.8); /* Fondo gris oscuro semi-transparente */
+    margin-top: 20px;
+    border-top: 1px solid #777;
+}
+
+.main-footer p {
+    font-size: 0.8em;
+    color: #c0c0c0;
+}
