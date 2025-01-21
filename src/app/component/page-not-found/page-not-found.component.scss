@@ -1,0 +1,44 @@
+.page-not-found {
+    background-color: #ffffff; /* Blanco */
+    color: #000000; /* Negro */
+    font-family: 'Cinzel', serif; /* Fuente con estilo medieval */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .image-container {
+    width: 50%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .caminantes-blancos-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3em;
+    color: #000000;
+    text-shadow: 1px 1px 2px #ffffff;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #000000;
+    text-shadow: 1px 1px 2px #ffffff;
+  }
+  
+  a {
+    color: #000000;
+    text-decoration: underline;
+  }
