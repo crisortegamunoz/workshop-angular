@@ -2,6 +2,8 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
 .ngx-pagination {
   background: rgb(8,184,245);
   background: linear-gradient(90deg, rgba(8,184,245,1) 0%, rgba(59,134,173,1) 100%);
@@ -132,5 +134,131 @@
     }
   }
 
+}
+
+body {
+  font-family: 'Cinzel', serif;
+}
+
+body {
+  background-color: #222; /* Un gris más oscuro, como la piedra de Winterfell */
+  color: #eee; /* Blanco hueso para el texto */
+  font-family: 'Cinzel', serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/39/53/1f/39531f8f948f95f492a54366113b869d.jpg"); /* Imagen de fondo sutil */
+  background-size: cover;
+  background-attachment: fixed; /* Para que la imagen de fondo se mantenga fija al hacer scroll */
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  backdrop-filter: blur(5px); /* Añade un desenfoque al fondo para mejorar la legibilidad del texto */
+  background-color: rgba(34, 34, 34, 0.7); /* Fondo semi-transparente para el contenedor */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el contenedor*/
+}
+
+.main-header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #666; /* Borde más claro */
+  margin-bottom: 20px;
+}
+
+.main-header h1 {
+  font-size: 2.5em;
+  color: #d3d3d3; /* Gris claro, casi blanco */
+  text-shadow: 2px 2px 4px #000000; /*Sombra al texto*/
+}
+
+.subtitle {
+  font-style: italic;
+  margin-top: 10px;
+  color: #c0c0c0; /* Un gris un poco más oscuro para el subtítulo */
+}
+
+.main-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(40, 40, 40, 0.8); /* Fondo gris oscuro semi-transparente */
+  margin-top: 20px;
+  border-top: 1px solid #777;
+}
+
+.main-footer p {
+  font-size: 0.8em;
+  color: #c0c0c0;
+}
+// Character
+.character-card {
+  background-color: rgba(50, 50, 50, 0.7);
+  border: 1px solid #777;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center; /* Centra el contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.character-name {
+  color: #d3d3d3; /* Gris claro */
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.image-container {
+  width: 200px; /* Ancho fijo para la imagen */
+  height: 300px; /* Alto fijo para la imagen */
+  overflow: hidden; /* Oculta el desbordamiento si la imagen es más grande */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.character-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen al contenedor manteniendo la proporción */
+}
+
+.character-title {
+  color: #b0c4de; /* Azul acero claro */
+  margin-bottom: 5px;
+}
+
+.character-family {
+  color: #c0c0c0;
+  font-style: italic;
+}
+
+.no-character {
+  text-align: center;
+  padding: 20px;
+  color: #eee;
 }
 

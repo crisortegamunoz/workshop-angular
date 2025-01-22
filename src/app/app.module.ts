@@ -2,21 +2,31 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { DialogModule } from '@angular/cdk/dialog';
-import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CardComponent } from "./component/card/card.component";
+import { HomeComponent } from './component/home/home.component';
+import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        HomeComponent,
+        CardComponent,
+        PageNotFoundComponent,
     ],
-    bootstrap: [AppComponent], 
+    bootstrap: [
+        AppComponent
+    ], 
     imports: [
         BrowserModule,
         AppRoutingModule,
         CommonModule,
-        DialogModule], 
+        DialogModule,
+        HttpClientModule
+    ], 
     providers: [
         provideHttpClient(withInterceptorsFromDi())
     ] })

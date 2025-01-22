@@ -1,24 +1,15 @@
 <div class="container">
     <header class="main-header">
-      <h1>Bienvenidos al Workshop</h1>
+      <h1>Personas de Game of thrones</h1>
       <p class="subtitle">
         En el reino del desarrollo web, Angular reina con poderío, como los dragones de Daenerys.
         Aprender Angular es como forjar acero valyrio: requiere dedicación, pero otorga un poder inigualable para construir aplicaciones robustas y escalables.
         Domina los componentes como si fueran tus casas nobles, los servicios como tus consejeros de confianza, y el enrutamiento como los caminos del rey.
         Prepárate para conquistar el trono del frontend!
       </p>
-      <button (click)="onClickButton()"></button>
     </header>
     <main class="main-content">
-        <app-card *ngFor="let card of cardList" [card]="card" (loadDone)="onLoadDone($event)"></app-card>
-        <!--<section class="card">
-          <h2>Forja tu Espada de Código con Angular</h2>
-          <p>
-            Cada línea de código que escribes en Angular es como un golpe de espada en la forja.
-            Con cada nuevo componente, directiva o servicio que dominas, te acercas más a convertirte en un verdadero maestro del código.
-          </p>
-        </section>-->
-        <!--<div class="character-card">
+        <div class="character-card">
             <div class="character-info">
               <h2 class="character-name">Daenerys Targaryen</h2>
               <div class="image-container">
@@ -32,8 +23,8 @@
           </div>
           <div *ngIf="false" class="no-character">
               <p>No se ha proporcionado información del personaje.</p>
-        </div>-->
-                <!--<div class="character-card">
+        </div>
+        <div class="character-card">
             <div class="character-info">
               <h2 class="character-name">Jon Snow</h2>
               <div class="image-container">
@@ -47,7 +38,7 @@
           </div>
           <div *ngIf="false" class="no-character">
               <p>No se ha proporcionado información del personaje.</p>
-          </div>-->
+          </div>
     </main>
     <footer class="main-footer">
         <p>&copy; Workshop Angular - Inspirado en Game of Thrones</p>

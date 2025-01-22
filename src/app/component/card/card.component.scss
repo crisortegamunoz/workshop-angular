@@ -1,0 +1,18 @@
+.card {
+    background-color: rgba(50, 50, 50, 0.7); /* Fondo gris más claro y semi-transparente */
+    border: 1px solid #777; /* Borde más claro */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta al pasar el mouse */
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5); /* Sombra más pronunciada al hacer hover */
+}
+
+.card h2 {
+    color: #b0c4de; /* Azul acero claro */
+    margin-bottom: 10px;
+}
